@@ -8,7 +8,7 @@ To use this, install a version of `node` with ES6 support as well as
 `facebook-chat-api`. Then place a configuration file like the example provided
 in your working directory without the `.example` extension.
 
-Use `\join <friend>` to chat with `<friend>`.
+Use `/join <friend>` to chat with `<friend>`.
 
 ## To Do
 This project is in a very early stage of development, so there is a lot to do.
