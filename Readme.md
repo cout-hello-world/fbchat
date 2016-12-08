@@ -12,6 +12,7 @@ Use `\join <friend>` to chat with `<friend>`.
 
 ## To Do
 This project is in a very early stage of development, so there is a lot to do.
+
 1.  Add error handling.
 2.  Reprint interrupted message to be sent.
 3.  Add file uploading with `/file`.
