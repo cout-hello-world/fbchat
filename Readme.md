@@ -12,10 +12,10 @@ Use `\join <friend>` to chat with `<friend>`.
 
 ## To Do
 This project is in a very early stage of development, so there is a lot to do.
-1. Add error handling.
-2. Reprint interrupted message to be sent.
-3. Add file uploading with `/file`.
-4. Support group chat.
+1.  Add error handling.
+2.  Reprint interrupted message to be sent.
+3.  Add file uploading with `/file`.
+4.  Support group chat.
 
 ## Contributing
 Feel free to send me a pull request if you’ve implemented some other features
