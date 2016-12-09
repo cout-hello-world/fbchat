@@ -63,9 +63,12 @@ login(JSON.parse(config), (err, api) => {
             name += (i !== cmdArr.length - 1) ? (cmdArr[i] + " ") : (cmdArr[i]);
           }
           api.getUserID(name, (err, data) => {
-            // Handle error.
-            currentID = data[0].userID;
-            rl.setPrompt('fbchat:' + name + '$ ');
+            if (err) {
+              console.log("Facebook could not find user: " + name);
+            } else {
+              currentID = data[0].userID;
+              rl.setPrompt('fbchat:' + name + '$ ');
+            }
             rl.prompt();
           });
           //console.log(name);
