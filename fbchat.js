@@ -51,13 +51,11 @@ login(JSON.parse(config), (err, api) => {
   let currentID = null;
 
   rl.on('line', (line) => {
-    //api.sendMessage({body: line}, currid);
     if (line.length !== 0) {
       if (line[0] === '/') {
         const cmdArr = line.substr(1).trim().split(/\s+/);
         switch (cmdArr[0]) {
         case "join":
-          //console.log("Joining: cmdArr.length === " + cmdArr.length);
           let name = "";
           for (let i = 1; i < cmdArr.length; i++) {
             name += (i !== cmdArr.length - 1) ? (cmdArr[i] + " ") : (cmdArr[i]);
@@ -77,7 +75,6 @@ login(JSON.parse(config), (err, api) => {
         case "exit":
           process.exit();
         }
-        //console.log("cmdArr[0] === " + cmdArr[0]);
         rl.prompt();
       } else {
         api.sendMessage(line, currentID);
